@@ -1,0 +1,43 @@
+
+//Included Fonts
+@include font-face("alternative", "/fonts/guilder-alternative-webfont", $file-formats: svg eot ttf woff);
+@include font-face("guilder", "/fonts/guilder-webfont", $file-formats: eot ttf woff);
+
+//Font Family Mixins
+$guilder: "guilder", Helvetica, Arial;
+$display: "alternative", Helvetica, Arial;
+$body: "Open Sans", Helvetica, Arial, sans-serif;
+$condensed : 'Open Sans Condensed', sans-serif;
+
+h1, h2, h3, h4{
+	font-weight: normal;
+}
+
+body{
+	font-family: $condensed;
+}
+
+.display-header{
+	font-family: $display;
+	font-size: 15em;
+	line-height: 1em;
+	margin: 0;
+	@include media($medium){
+		font-size: 12em;
+	}
+	@include media($small){
+		font-size: 10em;
+	}
+	@include media($extra-small){
+		font-size: 8em;
+	}
+}
+.content-header{
+	font-family: $guilder;
+	font-size: 4em;
+	line-height: 1em;
+	margin: 0;
+	@include media($small){
+		font-size: 3em;
+	}
+}

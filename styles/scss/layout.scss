@@ -1,0 +1,15 @@
+.full-height{
+	height: 100%;
+	min-height: 100vh;
+}
+.section-box{
+	padding: 40px;
+	display: flex;
+}
+.section-box__wrapper{
+	max-width: 100vw;
+	width: 1000px;
+	margin: 0 auto;
+	min-height: 100%;
+	display: flex;
+}

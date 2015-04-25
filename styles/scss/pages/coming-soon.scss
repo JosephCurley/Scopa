@@ -1,0 +1,53 @@
+.parallax-background{
+	background-image: url(/assets/woodtexture.jpg);
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	z-index: 0;
+}
+.section-box--teaser {
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	text-align: center;
+}
+.teaser__logo {
+	flex: 1;
+	color: rgba(255,255,255,.8);
+}
+.section-box--details{
+	background-color: rgba(0,0,0,.8);
+	position: relative;
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	.section-box__wrapper{
+		flex-direction: row;
+		@include media($medium) {
+			flex-direction: column;
+		}
+	}
+}
+.map-module{
+	flex: 1;
+	display: flex;
+	border: 10px solid $black;
+	@include media($medium) {
+		min-height: 100vh;
+	}
+}
+.details__info{
+	flex: 1;
+	display: flex;
+	margin-left: 40px;
+	align-items: center;
+	justify-content: center;
+
+}
+.details__info__wrapper{
+	display: block;
+	text-align: center;
+}

@@ -1,0 +1,16 @@
+//Depetendencies
+@import "bourbon";
+@import "neat";
+
+//General
+@import "breakpoints";
+@import "grid";
+@import "colors";
+@import "typography";
+@import "general";
+@import "layout";
+
+//Pages
+@import "pages/home";
+@import "pages/coming-soon";
+
