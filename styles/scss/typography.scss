@@ -1,7 +1,7 @@
 
 //Included Fonts
-@include font-face("alternative", "/fonts/guilder-alternative-webfont", $file-formats: svg eot ttf woff);
-@include font-face("guilder", "/fonts/guilder-webfont", $file-formats: eot ttf woff);
+@include font-face("alternative", "../../fonts/guilder-alternative-webfont", $file-formats: svg eot ttf woff);
+@include font-face("guilder", "../../fonts/guilder-webfont", $file-formats: eot ttf woff);
 
 //Font Family Mixins
 $guilder: "guilder", Helvetica, Arial;

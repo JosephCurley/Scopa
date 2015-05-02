@@ -1,21 +1,40 @@
 <!DOCTYPE html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <title>Scopa</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/vendor/parallax.min.js"></script>
-    <link rel="stylesheet" href="styles/css/main.min.css">
-</head>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Scopa</title>
 
-<body>
-    <div class="wrapper">
-        <section class="full-height carousel"></section>
-        <section class="full-height about"></section>
-        <section class="full-height menu"></section>
-        <section class="full-height chef"></section>
-    </div>
-</body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="styles/css/main.min.css">
+    </head>
+
+    <body class="body--coming-soon">
+        <section class="parallax-background"></section>
+
+        <section class="full-height section-box section-box--teaser">
+            <div class="section-box__wrapper">
+                <div class="teaser__logo">
+                    <h1 class="display-header">Scopa</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="full-height section-box section-box--details">
+            <div class="section-box__wrapper">
+                <div class="details__info">
+                    <div class="details__info__wrapper">
+                        <h1 class="content-header">Opening Summer 2015</h1>
+                        <h2>319 Hanover Street Boston, MA</h2>
+                    </div>
+                </div>
+                <div class="map-module"></div>
+            </div>
+        </section>
+        <!--Footer Scripts-->
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDZC-KPF0mIm7erxql-GXxzOKokoOXDCyE&amp;sensor=false"></script>    
+        <script src="js/modules/map.js"></script>
+    </body>
 </html>
