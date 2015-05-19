@@ -7,11 +7,6 @@
 	top: 0;
 	z-index: 0;
 }
-.logo{
-	max-width: 300px;
-	width: 100%;
-	height: auto;
-}
 .section-box--details{
 	background-color: rgba(0,0,0,.8);
 	position: relative;
@@ -46,15 +41,22 @@
 
 }
 .details-info__logo{
-	width: 100%;
-	margin-bottom: 20px;
+	display: inline-block;
+	margin: 0 auto 20px;
 	padding-bottom: 20px;
 	border-bottom: 1px solid white;
-
+}
+.logo{
+	max-width: 300px;
+	width: 100%;
+	height: auto;
+	@include media($medium) {
+		max-width: 100px;
+	}
 }
 
 .details-info__about{
 	display: block;
 	text-align: center;
-	width: 100%;
+	margin: 0 auto;
 }
