@@ -14,7 +14,7 @@ h1, h2, h3, h4{
 }
 
 body{
-	font-family: $condensed;
+	font-family: $body;
 }
 
 .display-header{
@@ -32,12 +32,20 @@ body{
 		font-size: 8em;
 	}
 }
-.content-header{
+.section-title{
 	font-family: $guilder;
-	font-size: 4em;
+	font-size: 5em;
 	line-height: 1em;
+	letter-spacing: .1em;
 	margin: 0;
-	@include media($small){
-		font-size: 3em;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	span{
+		border: 1px solid white;
+		padding: 0 .2em 0 .3em;
+	}
+	@include media($small) {
+		font-size: 4em;
 	}
 }
